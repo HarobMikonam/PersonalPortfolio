@@ -166,7 +166,7 @@ body {
 .footerlinks{
     display: flex;
     flex-direction: row;
-    gap: 20px
+    gap: 24px
 }
 
 .footerlinks li{
@@ -188,8 +188,4 @@ body {
 .github-icon-wrapper{
     display: flex;
     align-items: center;
-}
-
-.mail-icon-wrapper:hover{
-color: var(--secondary-color);
 }
