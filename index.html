@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Pushtopezevenkgos</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Matthew Faghiri is a back-end web developer with experience in creating efficient and scalable web applications.">
+  <title>Matthew Faghiri | Back-End Web Developer</title>
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  
+  <!-- Favicon Icons -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
+<body>
   <script src="script.js"></script>
 <div class="nav-container">
     <h1 class="navlogo"><a href="#">Matthew</a></h1>
 <div class="navbar">
     <nav class="navbar-text">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li>
+                <a href="#" onclick=
+                "contentHandler('home')">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick=
+                "contentHandler('AboutMe')">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick=
+                "contentHandler('MyWork')">
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick=
+                "contentHandler('ContactMe')">
+                    Contact Me
+                </a>
+            </li>
         </ul>
     </nav>
+    </div>
 </div>
+<main class="main">
+    <section class="snake-container">
+    <div class="pageContent">
+        <div class="container">
+            <div class="gamesettings">
+                <div class="thnakelogo">
+                    <img src="images\Thnake_logo.png" width="321" height="45" alt="">
+                </div>
+            </div>
+            <div class="textcontent">
+                <p id="home-p">Hi, I'm</p>
+                <h1 style="color: var(--secondary-color);">Matthew Faghiri</h1>
+                <h2>A <span style="color: var(--secondary-color);">back-end</span> web developer</h2>
+                <div class="home-buttons">
+                    <a href="#"><button class="button contact-me">Contact Me</button></a>
+                    <a href="#"><button class="button download-cv">Download CV</button></a>
+                </div>     
+            </div>  
+        </div>
+    </div>
+</section>
+</main>
 <footer class="footer-container">
-  <menu class="footerlinks">
-    <li class="mail-icon-wrapper">
-        <a href="mailto:your-email@example.com">
-            <img tabindex="0" role="button" class="mail-icon icon" src="/icons/email.svg" alt="Email">
-        </a>
-    </li>
-    <li><div class="divider"></div></li>
-    <li class="github-icon-wrapper">
-        <a href="https://github.com/harobmikonam" target="_blank" rel="noopener noreferrer">
-            <img tabindex="0" role="button" class="github-icon icon" src="/icons/github.svg" alt="GitHub">
-        </a>
-    </li>
-</menu>
-</footer>
+    <ul class="footerlinks">
+      <li class="mail-icon-wrapper">
+          <a href="mailto:mattfaghiri@gmail.com">
+              <img tabindex="0" role="button" class="mail-icon icon" src="/icons/email.svg" alt="Email">
+          </a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li class="github-icon-wrapper">
+          <a href="https://github.com/harobmikonam" target="_blank" rel="noopener noreferrer">
+              <img tabindex="0" role="button" class="github-icon icon" src="/icons/github.svg" alt="GitHub">
+          </a>
+      </li>
+    </ul>
+  </footer>
+  
 </body>
 </html>
