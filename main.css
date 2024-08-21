@@ -352,6 +352,7 @@ body {
   height: 50px;
   color: var(--text-color);
   font-size: 20px;
+  cursor: pointer;
 }
 
 .settings{
@@ -366,4 +367,5 @@ body {
   height: 50px;
   color: var(--text-color);
   font-size: 20px;
+  cursor: pointer;
 }
