@@ -7,16 +7,16 @@ class Navbar extends HTMLElement {
                 <nav class="navbar-text">
                     <ul>
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="/home">Home</a>
                         </li>
                         <li>
-                            <a href="#aboutme">About Me</a>
+                            <a href="/about-me">About Me</a>
                         </li>
                         <li>
-                            <a href="#mywork">Projects</a>
+                            <a href="/my-work">Projects</a>
                         </li>
                         <li>
-                            <a href="#contactme">Contact Me</a>
+                            <a href="/contact-me">Contact Me</a>
                         </li>
                     </ul>
                 </nav>
@@ -25,7 +25,6 @@ class Navbar extends HTMLElement {
         `;
     }
 }
-
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
