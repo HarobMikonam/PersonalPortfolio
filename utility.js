@@ -7,16 +7,16 @@ class Navbar extends HTMLElement {
                 <nav class="navbar-text">
                     <ul>
                         <li>
-                            <a href="/home">Home</a>
+                            <a href="home.html">Home</a>
                         </li>
                         <li>
-                            <a href="/about-me">About Me</a>
+                            <a href="about-me.html">About Me</a>
                         </li>
                         <li>
-                            <a href="/my-work">Projects</a>
+                            <a href="my-work.html">Projects</a>
                         </li>
                         <li>
-                            <a href="/contact-me">Contact Me</a>
+                            <a href="contact-me.html">Contact Me</a>
                         </li>
                     </ul>
                 </nav>
