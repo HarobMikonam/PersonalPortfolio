@@ -5,3 +5,6 @@
 #### 0.3.0 - Added javascript files to turn the website into an SPA, dynamically loading content instead of page change.
 #### 0.3.1 - Removed Files that make the portfolio into an SPA. No longer dynamically loading elements.
 #### 0.4.0 - Made the navbar and footer into reusable components.
+#### 0.5.0 - Created the containers and placed content within about me page.
+#### 0.5.1 - added skill icons, did formatting and added background image.
+#### 0.6.0 - Completion of the about me page.

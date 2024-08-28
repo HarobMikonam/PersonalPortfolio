@@ -8,6 +8,7 @@ a {
   text-decoration: none;
 }
 
+
 .ibm-plex-sans-thin {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 100;
@@ -104,22 +105,29 @@ a {
     --wasd-arrow: #2A3236;
 }
 
+/* added height margin and overflow hidden */
 body {
     background-color: var(--main-bg-color);
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
     user-select: none;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; 
 }
 
 .nav-container {
+  z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--footer-nav-color);
     border-bottom: var(--stroke-color) solid 1px;
-    position: static;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: 74px
+    height: 74px;
 }
 
 
@@ -206,28 +214,75 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.375em;
+    font-size: 34px;
     color: var(--text-color);
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.body-1{
+.body-1, .body-2{
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--text-color);
+    text-overflow: ellipsis;
+    max-width: auto;
 }
 
 .about-container{
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; */
-    height: calc(100dvh - 75px - 75px);
-    margin: 60px;
-    gap: 104px;
+  display: flex;
+  flex-direction: row;
+  height: calc(100dvh - 75px - 75px);
+  margin: 120px 180px 180px;
+  gap: 104px;
 }
 
 .title-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 300px;
+}
+
+.content-body{
+display: flex;
+flex-direction: column;
+gap: 170px;
+}
+
+.body-1{
+right: 150px;
+}
+
+.skills{
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color); /* Fully transparent */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); 
+  border-radius: 25px;
+}
+
+/* added main to have the scrollbar within the content */
+main {
+  overflow-y: auto; /* Allow vertical scrolling in main */
+  padding-top: 75px; /* Space for the fixed navbar */
+  padding-bottom: 75px; /* Space for the fixed footer */
+  height: calc(100vh - 75px - 75px); /* Height for main content area */
 }
