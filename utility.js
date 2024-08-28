@@ -13,7 +13,7 @@ class Navbar extends HTMLElement {
                             <a href="about-me.html">About Me</a>
                         </li>
                         <li>
-                            <a href="my-work.html">Projects</a>
+                            <a href="projects.html">Projects</a>
                         </li>
                         <li>
                             <a href="contact-me.html">Contact Me</a>
