@@ -246,9 +246,10 @@ body {
 }
 
 .content-body{
-display: flex;
-flex-direction: column;
-gap: 170px;
+  display: grid;
+/* display: flex;
+flex-direction: column; */
+  gap: 170px;
 }
 
 .body-1{
