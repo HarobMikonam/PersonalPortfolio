@@ -8,3 +8,5 @@
 #### 0.5.0 - Created the containers and placed content within about me page.
 #### 0.5.1 - added skill icons, did formatting and added background image.
 #### 0.6.0 - Completion of the about me page.
+#### 0.6.1 - Minor QoL additions to the About Me page that forbids it from completely breaking when zooming out.
+#### 0.6.2 - Added lazy loading to icons and pictures. Preloading Fonts now.
