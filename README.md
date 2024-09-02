@@ -10,3 +10,5 @@
 #### 0.6.0 - Completion of the about me page.
 #### 0.6.1 - Minor QoL additions to the About Me page that forbids it from completely breaking when zooming out.
 #### 0.6.2 - Added lazy loading to icons and pictures. Preloading Fonts now.
+#### 0.7.0 - Added the projects page. Started development on the projects section of the page.
+#### 0.7.1 - Making the projects page be populated using html components using javascript.
