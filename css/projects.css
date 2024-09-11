@@ -133,34 +133,36 @@ body {
 
 
 .navbar-text ul li {
-    margin-right: 57px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    color: var(--text-color);
-    font-size: 24px;
-    list-style: none;
-    display: inline-flex;
-    transition: color 0.1s ease;
+  margin-right: 57px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  font-size: 24px;
+  list-style: none;
+  display: inline-flex;
+  transition: color 0.1s ease;
+  position: relative;
 }
 
 .navbar-text ul li.active a {
-  color: var(--secondary-color);
+color: var(--secondary-color);
 }
 
 .navbar-text li a:hover{
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
-.navlogo{
-    margin-left: 35px;
-    margin-top: 14px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    color: var(--secondary-color);
-    font-size: 36px;
-    margin-top: 27px;
-    height: 100%;
-    display: flex;
+.navbar-text ul li .icon {
+display: none; /* Hide by default */
+position: absolute;
+bottom: -10px; /* Adjust as needed for spacing */
+left: 50%;
+transform: translateX(-50%);
+padding-bottom: 8px;
+}
+
+.navbar-text ul li.active .icon {
+display: block;
 }
 
 .navlogo a{

@@ -132,6 +132,7 @@ body {
     list-style: none;
     display: inline-flex;
     transition: color 0.1s ease;
+    position: relative;
 }
 
 .navbar-text ul li.active a {
@@ -140,6 +141,19 @@ body {
 
 .navbar-text li a:hover{
     color: var(--secondary-color);
+}
+
+.navbar-text ul li .icon {
+  display: none; /* Hide by default */
+  position: absolute;
+  bottom: -10px; /* Adjust as needed for spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 8px;
+}
+
+.navbar-text ul li.active .icon {
+  display: block;
 }
 
 .navlogo{

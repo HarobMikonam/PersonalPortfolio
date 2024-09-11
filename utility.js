@@ -2,26 +2,32 @@ class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="nav-container">
-            <h1 class="navlogo"><a href="#">Matthew</a></h1>
-            <div class="navbar">
-                <nav class="navbar-text">
-                    <ul>
-                        <li>
-                            <a href="home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about-me.html">About Me</a>
-                        </li>
-                        <li>
-                            <a href="projects.html">Projects</a>
-                        </li>
-                        <li>
-                            <a href="contact-me.html">Contact Me</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <h1 class="navlogo"><a href="#">Matthew</a></h1>
+    <div class="navbar">
+        <nav class="navbar-text">
+            <ul>
+                <li id="home">
+                    <a href="home.html">Home</a>
+                    <img class="icon" src="./icons/active page.svg">
+                </li>
+                <li id="about-me">
+                    <a href="about-me.html">About Me</a>
+                    <img class="icon" src="./icons/active page.svg">
+                </li>
+                <li id="projects">
+                    <a href="projects.html">Projects</a>
+                    <img class="icon" src="./icons/active page.svg">
+                </li>
+                <li id="contact-me">
+                    <a href="contact-me.html">Contact Me</a>
+                    <img class="icon" src="./icons/active page.svg">
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
         `;
     }
 }
@@ -75,19 +81,16 @@ customElements.define('portfolio-navbar', Navbar);
 customElements.define('portfolio-footer', Footer);
 customElements.define('project-setion', ProjectSection);
 
-// const maincontainer = document.querySelector('.main-container');
 
-// for (let i = 1; i<=1; i++) {
-//     const project = document.createElement('div');
-//     project.className = "container";
+// ACTIVE PAGE CODE
+document.addEventListener('DOMContentLoaded', function () {
+    const path = window.location.pathname;
+    const navLinks = document.querySelectorAll('.navbar-text ul li');
 
-//     const boxBehind = document.createElement('div');
-//     boxBehind.className = 'box-behind';
-//     project.appendChild(boxBehind);
-
-//     const box = document.createElement('div');
-//     box.className = 'box';
-//     project.appendChild(box);
-
-//     maincontainer.appendChild(project);
-// }
+    navLinks.forEach(link => {
+        const linkPath = link.querySelector('a').getAttribute('href');
+        if (path.includes(linkPath)) {
+            link.classList.add('active');
+        }
+    });
+});
