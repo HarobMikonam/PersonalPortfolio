@@ -93,7 +93,7 @@ a {
     font-style: italic;
   }
   
-:root {
+  :root {
     --main-bg-color: #121212;
     --secondary-color: #FF4500;
     --stroke-color: #3E4142;
@@ -103,6 +103,7 @@ a {
     --descriptional-color: #B8C5C9;
     --button-color: #2A3236;
     --wasd-arrow: #2A3236;
+    --project-nothovered: rgba(255, 69, 0, 0.25);
 }
 
 /* added height margin and overflow hidden */
@@ -113,7 +114,7 @@ body {
     user-select: none;
     margin: 0;
     height: 100vh;
-    overflow: hidden; 
+    overflow: auto; 
 }
 
 .nav-container {
@@ -181,6 +182,7 @@ body {
     background-color: var(--footer-nav-color);
     border-top: var(--stroke-color) solid 1px;
     height: 32px;
+    z-index: 2;
 }
 
 .footerlinks{
@@ -235,7 +237,72 @@ body {
   display: flex;
   flex-direction: row;
   height: calc(100dvh - 75px - 75px);
-  margin: 120px 180px 180px;
+  margin: 180px 180px 180px;
   gap: 104px;
   justify-content: center;
+}
+
+/* COMPONENTS SECTION  */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 52px;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 256px;
+  margin: 0;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: var(--modal-color); 
+  z-index: 1;
+  border: 1px solid var(--stroke-color); 
+}
+
+.box-behind {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  border: 1px solid var(--project-nothovered); 
+  background-color: var(--modal-color);
+  z-index: 1;
+  transition: border-color 0.3s ease; 
+}
+
+.container:hover .box-behind {
+  border-color: var(--secondary-color); 
+}
+/* END OF COMPONENTS SECTION */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color); /* Fully transparent */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); 
+  border-radius: 25px;
+}
+
+main {
+  overflow-y: auto; /* Allow vertical scrolling in main */
+  padding-bottom: 75px; /* Space for the fixed footer */
+  height: calc(100vh - 75px - 75px); /* Height for main content area */
 }

@@ -12,3 +12,4 @@
 #### 0.6.2 - Added lazy loading to icons and pictures. Preloading Fonts now.
 #### 0.7.0 - Added the projects page. Started development on the projects section of the page.
 #### 0.7.1 - Making the projects page be populated using html components using javascript.
+#### 0.7.2 - Projects page now populated, each project will be its own individual component where ill be able to create projects using a simple CMS. Projects page requires minor css changes and pagination feature.
