@@ -53,44 +53,11 @@ class Footer extends HTMLElement {
     }
 }
 
-class ProjectSection extends HTMLElement {
-    connectedCallback() {
-        const maincontainer = document.createElement('div');
-        maincontainer.className = 'main-container';
-
-        for (let i = 1; i <= 9; i++) {
-            const project = document.createElement('div');
-            project.className = "container";
-
-            const boxBehind = document.createElement('div');
-            boxBehind.className = 'box-behind';
-            project.appendChild(boxBehind);
-
-            const box = document.createElement('div');
-            box.className = 'box';
-            project.appendChild(box);
-
-            maincontainer.appendChild(project);
-        }
-
-        this.appendChild(maincontainer);
-    }
-}
 
 customElements.define('portfolio-navbar', Navbar);
 customElements.define('portfolio-footer', Footer);
-customElements.define('project-setion', ProjectSection);
 
 
-// ACTIVE PAGE CODE
-document.addEventListener('DOMContentLoaded', function () {
-    const path = window.location.pathname;
-    const navLinks = document.querySelectorAll('.navbar-text ul li');
 
-    navLinks.forEach(link => {
-        const linkPath = link.querySelector('a').getAttribute('href');
-        if (path.includes(linkPath)) {
-            link.classList.add('active');
-        }
-    });
-});
+
+

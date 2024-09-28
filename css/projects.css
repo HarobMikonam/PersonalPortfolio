@@ -165,9 +165,21 @@ padding-bottom: 8px;
 display: block;
 }
 
+.navlogo{
+  margin-left: 35px;
+  margin-top: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 36px;
+  margin-top: 27px;
+  height: 100%;
+  display: flex;
+}
+
 .navlogo a{
-    text-decoration: none;
-    color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .navbar-text li a{
@@ -307,4 +319,12 @@ main {
   overflow-y: auto; /* Allow vertical scrolling in main */
   padding-bottom: 75px; /* Space for the fixed footer */
   height: calc(100vh - 75px - 75px); /* Height for main content area */
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 52px;
+  margin: 56px;
 }
