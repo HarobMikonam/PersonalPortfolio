@@ -24,10 +24,40 @@
 <body>
     <portfolio-navbar></portfolio-navbar>
     <main>
-        
-    </main>
+      <section class="contact-me">
+          <div class="contact-me-container">
+              <div class="title-container">
+                  <div class="title">
+                      <h2>Contact <span style="color: var(--secondary-color);">Me</span></h2>
+                  </div>
+                  <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  <a href="./content/Matthew_CV.pdf"><button class="button download-cv">Download CV</button></a>
+              </div>
+              <div class="line"><img src="images\fade-line.svg" height="580" alt=""></div>
+              
+              <div class="contact-wrapper">
+              <div class="contact-me-content-container">
+                <form action="">
+                  <label for="name">Name</label>
+                  <input type="text" id="name"  name="name" placeholder="John">
+
+                  <label  for="email">Email</label>
+                  <input  type="text" id="email"  name="email" placeholder="johndoe@example.com">
+
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" style="height:144.53px;width:544px;">
+                  </textarea>
+
+                  <input type="Submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+      </section>
+  </main>
     <portfolio-footer></portfolio-footer>
-    <script src="./utility.js"></script>
+    <script src="./js/utility.js"></script>
     <script src="./js/active-page.js"></script>
 </body>
 </html>

@@ -279,6 +279,7 @@ display: block;
   background-color: var(--modal-color); 
   z-index: 1;
   border: 1px solid var(--stroke-color); 
+  cursor: pointer;
 }
 
 .box-behind {
@@ -292,6 +293,7 @@ display: block;
   background-color: var(--modal-color);
   z-index: 1;
   transition: border-color 0.3s ease; 
+  cursor: pointer;
 }
 
 .container:hover .box-behind {
@@ -328,3 +330,4 @@ main {
   gap: 52px;
   margin: 56px;
 }
+

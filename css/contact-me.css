@@ -223,3 +223,158 @@ display: block;
     display: flex;
     align-items: center;
 }
+
+.title{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 34px;
+  color: var(--text-color);
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.description{
+  font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: var(--text-color);
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.contact-me-container{
+  display: flex;
+  flex-direction: row;
+  height: calc(100dvh - 75px - 75px);
+  margin: 180px 180px 180px;
+  gap: 104px;
+  justify-content: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color); /* Fully transparent */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); 
+  border-radius: 25px;
+}
+
+main {
+  overflow-y: none; /* Allow vertical scrolling in main */
+  padding-bottom: 75px; /* Space for the fixed footer */
+  height: calc(100vh - 75px - 75px); /* Height for main content area */
+}
+
+.download-cv {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: var(--button-color);
+  border: none;
+  color: var(--text-color);
+  padding: 20px 62px;
+  border-radius: 25px;
+  font-size: 24px;
+  border: var(--stroke-color) solid 1px;
+  cursor: pointer;
+  margin-top: 26px;
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0; 
+  width: 100%; 
+  gap: 16px;
+}
+
+.contact-wrapper{
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.contact-me-content-container {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  width: 100%; 
+  gap: 56px;
+  align-items: center;
+}
+
+input[type=submit] {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--text-color);
+  /* padding: 20px 79px; */
+  border-radius: 25px;
+  font-size: 24px;
+  border: var(--stroke-color) solid 1px;
+  cursor: pointer;
+  width: 150px;
+  height: 52px;
+  margin-top: 28px;
+  font-size: 20px;
+}
+
+label[for=name], label[for=email], label[for=message]{
+
+  color: var(--secondary-color);
+  font-size: 20px;
+
+}
+
+input::placeholder{
+  font-size: 20px;
+}
+
+input[type=text]{
+  width: 544px;
+  color: var(--descriptional-color);
+}
+
+#name, #email, #message {
+  background-color: var(--modal-color);
+  border-radius: 25px;
+  border-color: var(--stroke-color);
+  height: 50px;
+  padding-left: 28px;
+  resize: none;
+  box-shadow: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none; /* Ensures no extra outline appears on focus */
+}
+
+
+.label{
+  font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color:var(--secondary-color);
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
