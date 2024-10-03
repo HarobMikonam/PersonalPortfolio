@@ -329,5 +329,9 @@ main {
   justify-content: center;
   gap: 52px;
   margin: 56px;
+  padding-bottom: 100px;
 }
 
+.page-left, .page-right{
+  cursor: pointer;
+}
