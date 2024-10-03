@@ -299,6 +299,15 @@ display: block;
 .container:hover .box-behind {
   border-color: var(--secondary-color); 
 }
+
+/* #center-box {
+  border: 1px solid var(--default-border-color); 
+  transition: border-color 0.3s ease; 
+}
+
+.container#center-box:hover {
+  border-color: var(--secondary-color); 
+} */
 /* END OF COMPONENTS SECTION */
 
 /* width */
