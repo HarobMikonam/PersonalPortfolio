@@ -13,3 +13,6 @@
 #### 0.7.0 - Added the projects page. Started development on the projects section of the page.
 #### 0.7.1 - Making the projects page be populated using html components using javascript.
 #### 0.7.2 - Projects page now populated, each project will be its own individual component where ill be able to create projects using a simple CMS. Projects page requires minor css changes and pagination feature.
+#### 0.7.3 - The start of Contact me Page, added forms and populated the page with content.
+#### 0.7.4 - Fixes in the projects page, have made the projects boxes attract towards the center of the container.
+#### 0.7.5 - Start of implementation of pages in projects, making it possible to add more than 9 projects.
