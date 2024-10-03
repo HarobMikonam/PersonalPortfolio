@@ -2,7 +2,7 @@ class ProjectSection extends HTMLElement {
     connectedCallback() {
         const maincontainer = document.createElement('div');
         maincontainer.className = 'main-container';
-        const max_projects = 4
+        const max_projects = 2
 
         for (let i = 0; i <= max_projects; i++) {
             const project = document.createElement('div');
