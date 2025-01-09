@@ -1,6 +1,6 @@
 class Navbar extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <div class="nav-container">
     <h1 class="navlogo"><a href="#">Matthew</a></h1>
     <div class="navbar">
@@ -29,11 +29,11 @@ class Navbar extends HTMLElement {
 
 
         `;
-    }
+  }
 }
 class Footer extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <footer class="footer-container">
     <ul class="footerlinks">
       <li class="mail-icon-wrapper">
@@ -50,14 +50,8 @@ class Footer extends HTMLElement {
     </ul>
   </footer>
         `;
-    }
+  }
 }
 
-
-customElements.define('portfolio-navbar', Navbar);
-customElements.define('portfolio-footer', Footer);
-
-
-
-
-
+customElements.define("portfolio-navbar", Navbar);
+customElements.define("portfolio-footer", Footer);

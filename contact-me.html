@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <!-- Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A back-end web developer with experience in creating efficient and scalable web applications.">
-  <title>Matthew F. | Contact Me</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Main CSS -->
-  <link rel="preload" href="./css/contact-me.css" as="style">
-  <link rel="stylesheet" type="text/css" href="../css/contact-me.css">
-  
-  <!-- Favicon Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./icons/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg">
-</head>
-<body>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A back-end web developer with experience in creating efficient and scalable web applications."
+    />
+    <title>Matthew F. | Contact Me</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/contact-me.css" />
+
+    <!-- Favicon Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+  </head>
+  <body>
     <portfolio-navbar></portfolio-navbar>
     <main>
       <section class="contact-me">
-          <div class="contact-me-container">
-              <div class="title-container">
-                  <div class="title">
-                      <h2>Contact <span style="color: var(--secondary-color);">Me</span></h2>
-                  </div>
-                  <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                  <a href="./content/Matthew_CV.pdf"><button class="button download-cv">Download CV</button></a>
-              </div>
-              <div class="line"><img src="images\fade-line.svg" height="580" alt=""></div>
-              
-              <div class="contact-wrapper">
-              <div class="contact-me-content-container">
-                <form action="">
-                  <!-- <label for="name">Name</label> -->
-                  <input type="text" id="name"  name="name" placeholder="John">
-                  <div class="name"></div>
+        <div class="contact-me-container">
+          <div class="title-container">
+            <div class="title">
+              <h2>
+                Contact <span style="color: var(--secondary-color)">Me</span>
+              </h2>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <a href="./content/Matthew_CV.pdf"
+              ><button class="button download-cv">Download CV</button></a
+            >
+          </div>
+          <div class="line">
+            <img src="images\fade-line.svg" height="580" alt="" />
+          </div>
 
-                  <!-- <label  for="email">Email</label> -->
-                  <input  type="text" id="email"  name="email" placeholder="johndoe@example.com">
-                  <div class="name"></div>
-                  <!-- <label for="message">Message</label> -->
-                  <textarea id="message" name="message" style="height:144.53px;width:544px;">
-                  </textarea>
-                  <div class="name-message"></div>
-                  <input type="Submit" value="Submit">
-                </form>
-              </div>
+          <div class="contact-wrapper">
+            <div class="contact-me-content-container">
+              <form action="">
+                <!-- <label for="name">Name</label> -->
+                <input type="text" id="name" name="name" placeholder="John" />
+                <div class="name"></div>
+
+                <!-- <label  for="email">Email</label> -->
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="johndoe@example.com"
+                />
+                <div class="name"></div>
+                <!-- <label for="message">Message</label> -->
+                <textarea
+                  id="message"
+                  name="message"
+                  style="height: 144.53px; width: 544px"
+                >
+                </textarea>
+                <div class="name-message"></div>
+                <input type="Submit" value="Submit" />
+              </form>
             </div>
           </div>
+        </div>
       </section>
-  </main>
+    </main>
     <portfolio-footer></portfolio-footer>
     <script src="./js/utility.js"></script>
     <script src="./js/active-page.js"></script>
-</body>
+  </body>
 </html>

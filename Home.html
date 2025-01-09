@@ -1,62 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A back-end web developer with experience in creating efficient and scalable web applications.">
-  <title>Matthew F. | Back-End Web Developer</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Main CSS -->
-  <link rel="preload" href="./css/home.css" as="style">
-  <link rel="stylesheet" type="text/css" href="./css/home.css">
-  
-  <!-- Favicon Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./icons/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg">
-</head>
-<body>
-<portfolio-navbar></portfolio-navbar>
-<main class="main">
-    <section class="snake-container">
-    <div class="pageContent">
-        <div class="container">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A back-end web developer with experience in creating efficient and scalable web applications."
+    />
+    <title>Matthew F. | Back-End Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="preload" href="./css/home.css" as="style" />
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+
+    <!-- Favicon Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+  </head>
+  <body>
+    <portfolio-navbar></portfolio-navbar>
+    <main class="main">
+      <section class="snake-container">
+        <div class="pageContent">
+          <div class="container">
             <div class="gamesettings">
-                <div class="thnakelogo">
-                    <img src="images\Thnake_logo.png" width="321" height="45" alt="">
-                    <div class="keybind">
-                    <div class="wasd"><img src="images\wasd.png" width="136" height="91" alt=""></div>
-                    <div>
-                        <p>or</p>
-                    </div>
-                    <div class="arrow"><img src="images\arrow.png" width="136" height="91" alt=""></div>
+              <div class="thnakelogo">
+                <img
+                  src="images\Thnake_logo.png"
+                  width="321"
+                  height="45"
+                  alt=""
+                />
+                <div class="keybind">
+                  <div class="wasd">
+                    <img src="images\wasd.png" width="136" height="91" alt="" />
+                  </div>
+                  <div>
+                    <p>or</p>
+                  </div>
+                  <div class="arrow">
+                    <img
+                      src="images\arrow.png"
+                      width="136"
+                      height="91"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                </div>
-                <div class="gamebuttons">
-                    <a href="#"><button class="start-game">Start Game</button></a>
-                    <a href="#"><button class="settings">Settings</button></a>
-                </div>
+              </div>
+              <div class="gamebuttons">
+                <a href="#"><button class="start-game">Start Game</button></a>
+                <a href="#"><button class="settings">Settings</button></a>
+              </div>
             </div>
             <div class="textcontent">
-                <p id="home-p">Hi, I'm</p>
-                <h1 style="color: var(--secondary-color);">Matthew Faghiri</h1>
-                <h2>A <span style="color: var(--secondary-color);">back-end</span> web developer<span style="color: var(--secondary-color);">.</span></h2>
-                <div class="home-buttons">
-                    <a href="./contact-me.html"><button class="button contact-me">Contact Me</button></a>
-                    <a href="./content/Matthew_CV.pdf"><button class="button download-cv">Download CV</button></a>
-                </div>     
-            </div>  
+              <p id="home-p">Hi, I'm</p>
+              <h1 style="color: var(--secondary-color)">Matthew Faghiri</h1>
+              <h2>
+                A
+                <span style="color: var(--secondary-color)">back-end</span> web
+                developer<span style="color: var(--secondary-color)">.</span>
+              </h2>
+              <div class="home-buttons">
+                <a href="./contact-me.html"
+                  ><button class="button contact-me">Contact Me</button></a
+                >
+                <a href="./content/Matthew_CV.pdf"
+                  ><button class="button download-cv">Download CV</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-</main>
-  <portfolio-footer></portfolio-footer>
-  <script src="./js/utility.js"></script>
-  <script src="./js/active-page.js"></script>
-</body>
+      </section>
+    </main>
+    <portfolio-footer></portfolio-footer>
+    <script src="./js/utility.js"></script>
+    <script src="./js/active-page.js"></script>
+  </body>
 </html>

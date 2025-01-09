@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <!-- Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A back-end web developer with experience in creating efficient and scalable web applications.">
-  <title>Matthew F. | My Work</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Main CSS -->
-  <link rel="preload" href="./css/projects.css" as="style">
-  <link rel="stylesheet" type="text/css" href="../css/projects.css">
-  
-  <!-- Favicon Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./icons/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg">
-</head>
-<body>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A back-end web developer with experience in creating efficient and scalable web applications."
+    />
+    <title>Matthew F. | My Work</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="preload" href="./css/projects.css" as="style" />
+    <link rel="stylesheet" type="text/css" href="../css/projects.css" />
+
+    <!-- Favicon Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+  </head>
+  <body>
     <portfolio-navbar></portfolio-navbar>
     <main>
       <section class="projects">
-          <div class="projects-container">
-              <div class="title-container">
-                  <div class="title">
-                      <h2><span style="color: var(--secondary-color);">My</span> Work</h2>
-                  </div>
-                  <div class="description">
-                    Here are some projects that showcase my work and skills.</div>
-              </div>
-              <div class="line"><img src="images\fade-line.svg" height="800" alt=""></div>
-              <div class="project-content">
-                  <project-setion></project-setion>
-                  <div class="pagination">
-                    <div class="page-left"><img src="./icons/pagination-left-inactive.svg" width="44" height="44"></div>
-                    <div class="page-right"><img src="./icons/pagination-right-inactive.svg" width="44" height="44"></div>
-                </div>
-              </div>
+        <div class="projects-container">
+          <div class="title-container">
+            <div class="title">
+              <h2>
+                <span style="color: var(--secondary-color)">My</span> Work
+              </h2>
+            </div>
+            <div class="description">
+              Here are some projects that showcase my work and skills.
+            </div>
           </div>
+          <div class="line">
+            <img src="images\fade-line.svg" height="800" alt="" />
+          </div>
+          <div class="project-content">
+            <project-setion></project-setion>
+            <div class="pagination">
+              <div class="page-left">
+                <img
+                  src="./icons/pagination-left-inactive.svg"
+                  width="44"
+                  height="44"
+                />
+              </div>
+              <div class="page-right">
+                <img
+                  src="./icons/pagination-right-inactive.svg"
+                  width="44"
+                  height="44"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-  </main>
+    </main>
     <portfolio-footer></portfolio-footer>
     <script src="./js/utility.js"></script>
     <script src="./js/active-page.js"></script>
     <script src="./js/projects.js"></script>
-</body>
+  </body>
 </html>

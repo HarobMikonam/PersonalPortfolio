@@ -1,6 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -8,129 +8,127 @@ a {
   text-decoration: none;
 }
 
-
 .ibm-plex-sans-thin {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-extralight {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-light {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-regular {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-medium {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-semibold {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-bold {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .ibm-plex-sans-thin-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .ibm-plex-sans-extralight-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .ibm-plex-sans-light-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .ibm-plex-sans-regular-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .ibm-plex-sans-medium-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .ibm-plex-sans-semibold-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .ibm-plex-sans-bold-italic {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-sans-extralight {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-sans-light {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-sans-regular {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-medium {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-sans-semibold {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-sans-bold {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thin-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-sans-extralight-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-sans-light-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-sans-regular-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-sans-medium-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-sans-semibold-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-sans-bold-italic {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 :root {
-    --main-bg-color: #121212;
-    --secondary-color: #FF4500;
-    --stroke-color: #3E4142;
-    --text-color: #F2F2F2;
-    --modal-color: #181C1F;
-    --footer-nav-color: #0E1113;
-    --descriptional-color: #B8C5C9;
-    --button-color: #2A3236;
-    --wasd-arrow: #2A3236;
-    --project-nothovered: rgba(255, 69, 0, 0.25);
+  --main-bg-color: #121212;
+  --secondary-color: #ff4500;
+  --stroke-color: #3e4142;
+  --text-color: #f2f2f2;
+  --modal-color: #181c1f;
+  --footer-nav-color: #0e1113;
+  --descriptional-color: #b8c5c9;
+  --button-color: #2a3236;
+  --wasd-arrow: #2a3236;
+  --project-nothovered: rgba(255, 69, 0, 0.25);
 }
 
 /* added height margin and overflow hidden */
 body {
-    background-color: var(--main-bg-color);
-    background-image: url(../images/bg.svg);
-    background-repeat: no-repeat;
-    user-select: none;
-    margin: 0;
-    height: 100vh;
-    overflow: hidden; 
+  background-color: var(--main-bg-color);
+  background-image: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  user-select: none;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .nav-container {
   z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--footer-nav-color);
-    border-bottom: var(--stroke-color) solid 1px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--footer-nav-color);
+  border-bottom: var(--stroke-color) solid 1px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 74px;
 }
-
 
 .navbar-text ul li {
   margin-right: 57px;
@@ -145,87 +143,87 @@ body {
 }
 
 .navbar-text ul li.active a {
-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
-.navbar-text li a:hover{
+.navbar-text li a:hover {
   color: var(--secondary-color);
 }
 
 .navbar-text ul li .icon {
-display: none; /* Hide by default */
-position: absolute;
-bottom: -10px; /* Adjust as needed for spacing */
-left: 50%;
-transform: translateX(-50%);
-padding-bottom: 8px;
+  display: none; /* Hide by default */
+  position: absolute;
+  bottom: -10px; /* Adjust as needed for spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 8px;
 }
 
 .navbar-text ul li.active .icon {
-display: block;
+  display: block;
 }
 
-.navlogo{
-    margin-left: 35px;
-    margin-top: 14px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    color: var(--secondary-color);
-    font-size: 36px;
-    margin-top: 27px;
-    height: 100%;
-    display: flex;
+.navlogo {
+  margin-left: 35px;
+  margin-top: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 36px;
+  margin-top: 27px;
+  height: 100%;
+  display: flex;
 }
 
-.navlogo a{
-    text-decoration: none;
-    color: var(--secondary-color);
+.navlogo a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
-.navbar-text li a{
-    text-decoration: none;
-    color: var(--text-color);
+.navbar-text li a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-.footer-container{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 21px;
-    width:100%;
-    background-color: var(--footer-nav-color);
-    border-top: var(--stroke-color) solid 1px;
-    height: 32px;
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 21px;
+  width: 100%;
+  background-color: var(--footer-nav-color);
+  border-top: var(--stroke-color) solid 1px;
+  height: 32px;
 }
 
-.footerlinks{
-    display: flex;
-    flex-direction: row;
-    gap: 24px
+.footerlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
-.footerlinks li{
-    list-style: none;
+.footerlinks li {
+  list-style: none;
 }
 
-.divider{
-    display: flex;
-    width: 2px;
-    height: 100%;
-    background-color: var(--secondary-color);
+.divider {
+  display: flex;
+  width: 2px;
+  height: 100%;
+  background-color: var(--secondary-color);
 }
 
-.mail-icon-wrapper{
-    display: flex;
-    align-items: center;
+.mail-icon-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.github-icon-wrapper{
-    display: flex;
-    align-items: center;
+.github-icon-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-.title{
+.title {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -236,17 +234,17 @@ display: block;
   text-overflow: ellipsis;
 }
 
-.description{
+.description {
   font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    color: var(--text-color);
-    text-overflow: ellipsis;
-    max-width: 300px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  color: var(--text-color);
+  text-overflow: ellipsis;
+  max-width: 300px;
 }
 
-.contact-me-container{
+.contact-me-container {
   display: flex;
   flex-direction: row;
   height: calc(100dvh - 75px - 75px);
@@ -264,10 +262,10 @@ display: block;
 ::-webkit-scrollbar-track {
   background: var(--main-bg-color); /* Fully transparent */
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color); 
+  background: var(--secondary-color);
   border-radius: 25px;
 }
 
@@ -298,12 +296,12 @@ form {
   flex-direction: column;
   /* align-items: flex-end; */
   margin: 0;
-  padding: 0; 
-  width: 100%; 
+  padding: 0;
+  width: 100%;
   /* gap: 16px; */
 }
 
-.contact-wrapper{
+.contact-wrapper {
   display: flex;
   margin-left: 150px;
   margin-right: 150px;
@@ -313,14 +311,14 @@ form {
   font-weight: 400;
   font-style: normal;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 100%; 
+  width: 100%;
   gap: 56px;
   align-items: center;
 }
 
-input[type=submit] {
+input[type="submit"] {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -339,23 +337,25 @@ input[type=submit] {
   font-size: 20px;
 }
 
-label[for=name], label[for=email], label[for=message]{
-
+label[for="name"],
+label[for="email"],
+label[for="message"] {
   color: var(--secondary-color);
   font-size: 20px;
-
 }
 
-input::placeholder{
+input::placeholder {
   font-size: 20px;
 }
 
-input[type=text]{
+input[type="text"] {
   width: 544px;
   color: var(--descriptional-color);
 }
 
-#name, #email, #message {
+#name,
+#email,
+#message {
   background-color: var(--modal-color);
   border-radius: 25px;
   border-color: var(--stroke-color);
@@ -370,25 +370,24 @@ input:focus {
   outline: none; /* Ensures no extra outline appears on focus */
 }
 
-
-.label{
+.label {
   font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    color:var(--secondary-color);
-    text-overflow: ellipsis;
-    max-width: 300px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  color: var(--secondary-color);
+  text-overflow: ellipsis;
+  max-width: 300px;
 }
 
 input,
 textarea,
 select,
 button {
-    border: var(--stroke-color) 1px solid; /* Remove border */
+  border: var(--stroke-color) 1px solid; /* Remove border */
 }
 
-.name{
+.name {
   width: 35.5em;
   height: 3.125em;
   border-radius: 25px;
@@ -400,7 +399,7 @@ button {
   z-index: -1;
 }
 
-.name-message{
+.name-message {
   width: 35.5em;
   height: 9.1em;
   border-radius: 25px;
@@ -411,4 +410,3 @@ button {
   bottom: 8.8em;
   z-index: -1;
 }
-
