@@ -411,12 +411,6 @@ body {
 
 /* TEMPORARY MAIN NONE */
 @media screen and (max-width: 768px) {
-  .main {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .nav-container {
     overflow: visible;
     visibility: hidden;
@@ -426,5 +420,72 @@ body {
   .navbar-text {
     visibility: visible; /* Ensure children remain visible */
     position: relative; /* Keep layout intact */
+  }
+
+  .container{
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    height: 90%;
+  }
+  .wasd{
+    display: none;
+  }
+  .arrow{
+    display: none;
+  }
+
+  .gamesettings{
+    height: 200px;
+    width: 362px;
+  }
+
+  .thnakelogo{
+    gap: 0;
+  }
+
+  .gamesettings p{
+    display: none;
+  }
+
+  .textcontent{
+    text-align: center;
+    width: 100%;
+  }
+
+  p{
+    font-size: 22px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .home-buttons{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 24px;
+  }
+  .contact-me{
+    border-radius: 50px;
+    height: 56px;
+    width: 330px;
+    font-size: 22px;
+    justify-content: center;
+    padding: 0;
+  }
+  .download-cv{
+    border-radius: 50px;
+    height: 56px;
+    width: 330px;
+    font-size: 22px;
+    text-wrap: nowrap;
+    padding: 0;
+  }
+  .nav-container{
+    display: none;
+  }
+  .main {
+    overflow: hidden;
   }
 }

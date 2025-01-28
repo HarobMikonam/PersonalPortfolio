@@ -16,3 +16,4 @@
 #### 0.7.3 - The start of Contact me Page, added forms and populated the page with content.
 #### 0.7.4 - Fixes in the projects page, have made the projects boxes attract towards the center of the container.
 #### 0.7.5 - Start of implementation of pages in projects, making it possible to add more than 9 projects.
+#### 0.8.0 - Making each page resposive, as of 0.8.0, the home page is almost done.
