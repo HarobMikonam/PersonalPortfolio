@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A back-end web developer with experience in creating efficient and scalable web applications."
+      content="A full-stack web developer with experience in creating efficient and scalable web applications."
     />
-    <title>Matthew F. | Back-End Web Developer</title>
+    <title>Matthew F. | Full-Stack Web Developer</title>
 
     <!-- Google Fonts -->
     <link
@@ -42,7 +42,32 @@
     <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
   </head>
   <body>
-    <portfolio-navbar></portfolio-navbar>
+    <!-- <portfolio-navbar></portfolio-navbar> -->
+    <div class="nav-container">
+      <h1 class="navlogo"><a href="#">Matthew</a></h1>
+      <div class="navbar">
+        <nav class="navbar-text">
+          <ul>
+            <li id="home">
+              <a href="home.html">Home</a>
+              <img class="icon" src="./icons/active page.svg" />
+            </li>
+            <li id="about-me">
+              <a href="about-me.html">About Me</a>
+              <img class="icon" src="./icons/active page.svg" />
+            </li>
+            <li id="projects">
+              <a href="projects.html">Projects</a>
+              <img class="icon" src="./icons/active page.svg" />
+            </li>
+            <li id="contact-me">
+              <a href="contact-me.html">Contact Me</a>
+              <img class="icon" src="./icons/active page.svg" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <main class="main">
       <section class="snake-container">
         <div class="pageContent">
@@ -82,8 +107,10 @@
               <h1 style="color: var(--secondary-color)">Matthew Faghiri</h1>
               <h2>
                 A
-                <span style="color: var(--secondary-color)">full-stack</span> web
-                developer<span style="color: var(--secondary-color)">.</span>
+                <span style="color: var(--secondary-color)">full-stack</span>
+                web developer<span style="color: var(--secondary-color)"
+                  >.</span
+                >
               </h2>
               <div class="home-buttons">
                 <a href="./contact-me.html"
@@ -98,7 +125,42 @@
         </div>
       </section>
     </main>
-    <portfolio-footer></portfolio-footer>
+    <!-- <portfolio-footer></portfolio-footer> -->
+    <footer class="footer-container close">
+      <button class="hamburger-menu" aria-label="Menu">
+        <img src="/icons/hamburger.svg" alt="Menu" />
+      </button>
+      <ul class="footerlinks">
+        <li class="mail-icon-wrapper">
+          <a href="mailto:mattfaghiri@gmail.com">
+            <img
+              tabindex="0"
+              role="button"
+              class="mail-icon icon"
+              src="/icons/email.svg"
+              alt="Email"
+            />
+          </a>
+        </li>
+        <h1 class="navlogo-footer"><a href="#">Matthew</a></h1>
+        <li class="divider"></li>
+        <li class="github-icon-wrapper">
+          <a
+            href="https://github.com/harobmikonam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              tabindex="0"
+              role="button"
+              class="github-icon icon"
+              src="/icons/github.svg"
+              alt="GitHub"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
     <script src="./js/utility.js"></script>
     <script src="./js/active-page.js"></script>
   </body>

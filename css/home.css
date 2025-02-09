@@ -201,7 +201,6 @@ body {
 .divider {
   display: flex;
   width: 2px;
-  height: 100%;
   background-color: var(--secondary-color);
 }
 
@@ -307,6 +306,8 @@ body {
   height: 600px;
   justify-content: space-around;
   flex-direction: column;
+  display: none;
+  /* temporarily hidden until the development of the snake game is done */
 }
 
 .thnakelogo {
@@ -393,10 +394,61 @@ body {
   color: var(--text-color);
 }
 
+.navlogo-footer {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
 /* FOOTER RESPONSIVE */
 @media screen and (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    top: 100px;
+    width: 100%;
+    border: none;
+    visibility: hidden;
+  }
+
+  .navbar-text ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items in the center horizontally */
+    justify-content: center; /* Align items in the center vertically */
+    height: 100%;
+    gap: 60px;
+  }
+
+  .navbar-text {
+    z-index: 15;
+    top: -250px;
+    font-size: 25px;
+    left: 88%;
+  }
+
+  .navbar {
+    height: 0;
+    width: 0;
+  }
+
   .footer-container {
     max-width: 100%;
+  }
+
+  .navlogo-footer {
+    visibility: visible;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 30px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
   }
 
   .footerlinks {
@@ -411,62 +463,59 @@ body {
 
 /* TEMPORARY MAIN NONE */
 @media screen and (max-width: 768px) {
-  .nav-container {
-    overflow: visible;
-    visibility: hidden;
-    height: 0;
+  .navlogo {
+    display: none;
   }
-
   .navbar-text {
     visibility: visible; /* Ensure children remain visible */
     position: relative; /* Keep layout intact */
   }
 
-  .container{
+  .container {
     flex-wrap: wrap-reverse;
     gap: 0;
     height: 90%;
   }
-  .wasd{
+  .wasd {
     display: none;
   }
-  .arrow{
+  .arrow {
     display: none;
   }
 
-  .gamesettings{
+  .gamesettings {
     height: 200px;
     width: 362px;
   }
 
-  .thnakelogo{
+  .thnakelogo {
     gap: 0;
   }
 
-  .gamesettings p{
+  .gamesettings p {
     display: none;
   }
 
-  .textcontent{
+  .textcontent {
     text-align: center;
     width: 100%;
   }
 
-  p{
+  p {
     font-size: 22px;
   }
-  h1{
+  h1 {
     font-size: 30px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
-  .home-buttons{
+  .home-buttons {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 24px;
   }
-  .contact-me{
+  .contact-me {
     border-radius: 50px;
     height: 56px;
     width: 330px;
@@ -474,7 +523,7 @@ body {
     justify-content: center;
     padding: 0;
   }
-  .download-cv{
+  .download-cv {
     border-radius: 50px;
     height: 56px;
     width: 330px;
@@ -482,10 +531,54 @@ body {
     text-wrap: nowrap;
     padding: 0;
   }
-  .nav-container{
-    display: none;
+  /* .main {
+    overflow: hidden; temporarily disabled for navbar mobile
+  } */
+
+  /* Use pseudo elements before on the hamburger menu
+  make it 2px bigger cause border is 1px. Center it behind the hamburger menu backgground and in the center
+  before elements must give them content property
+  .hamburger-menu:before {
+    content: '';
+  } */
+
+  .hamburger-menu {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: 1px solid var(--stroke-color);
+    border-right: 1px solid var(--stroke-color);
+    border-top: 1px solid var(--stroke-color);
+    border-bottom: none;
+    background-color: var(--footer-nav-color);
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    left: calc(50vw - 25px);
+    top: 0px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transform: rotate(360deg) translateY(-98%);
+    cursor: pointer;
+    z-index: 10;
   }
-  .main {
-    overflow: hidden;
+
+  .hamburger-menu img {
+    width: 30px;
+    height: 20px;
+    /* transform: rotate(180deg) translateY(100%); */
+  }
+
+  .open {
+    height: 85%;
+    display: flex;
+    align-items: end;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .close {
+    display: flex;
+    align-items: end;
+    transition: height 0.4s ease-in-out;
   }
 }

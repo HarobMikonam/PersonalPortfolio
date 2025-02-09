@@ -31,27 +31,35 @@ class Navbar extends HTMLElement {
         `;
   }
 }
-class Footer extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-        <footer class="footer-container">
-    <ul class="footerlinks">
-      <li class="mail-icon-wrapper">
-          <a href="mailto:mattfaghiri@gmail.com">
-              <img tabindex="0" role="button" class="mail-icon icon" src="/icons/email.svg" alt="Email">
-          </a>
-      </li>
-      <li><div class="divider"></div></li>
-      <li class="github-icon-wrapper">
-          <a href="https://github.com/harobmikonam" target="_blank" rel="noopener noreferrer">
-              <img tabindex="0" role="button" class="github-icon icon" src="/icons/github.svg" alt="GitHub">
-          </a>
-      </li>
-    </ul>
-  </footer>
-        `;
-  }
-}
+// class Footer extends HTMLElement {
+//   connectedCallback() {
+//     this.innerHTML = `
+//         <footer class="footer-container">
+//     <ul class="footerlinks">
+//       <li class="mail-icon-wrapper">
+//           <a href="mailto:mattfaghiri@gmail.com">
+//               <img tabindex="0" role="button" class="mail-icon icon" src="/icons/email.svg" alt="Email">
+//           </a>
+//       </li>
+//       <li><div class="divider"></div></li>
+//       <li class="github-icon-wrapper">
+//           <a href="https://github.com/harobmikonam" target="_blank" rel="noopener noreferrer">
+//               <img tabindex="0" role="button" class="github-icon icon" src="/icons/github.svg" alt="GitHub">
+//           </a>
+//       </li>
+//     </ul>
+//   </footer>
+//         `;
+//   }
+// }
 
-customElements.define("portfolio-navbar", Navbar);
-customElements.define("portfolio-footer", Footer);
+// customElements.define("portfolio-navbar", Navbar);
+// customElements.define("portfolio-footer", Footer);
+
+const drawer = document.querySelector(".footer-container");
+const button = document.querySelector(".hamburger-menu");
+const navbar = document.querySelector(".navbar");
+
+button.addEventListener("click", () => {
+  drawer.classList.toggle("open");
+});

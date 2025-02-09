@@ -300,3 +300,25 @@ main {
   padding-bottom: 75px; /* Space for the fixed footer */
   height: calc(100vh - 75px - 75px); /* Height for main content area */
 }
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .nav-container {
+    overflow: visible;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .navbar-text {
+    visibility: visible; /* Ensure children remain visible */
+    position: relative; /* Keep layout intact */
+  }
+}
