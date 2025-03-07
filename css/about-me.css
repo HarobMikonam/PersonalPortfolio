@@ -323,6 +323,10 @@ br {
 }
 
 @media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+
   .about-container {
     margin-top: -100px;
   }

@@ -77,3 +77,11 @@
 #### **4.2.0**
 
 - Finished making the About Me page responsive as well, ensuring the layout adapts properly across all devices.
+
+#### **4.3.0**
+
+- Finalized the **Projects page**.
+  - Improved structure and styling.
+  - Ensured smooth pagination and navigation.
+  - Optimized assets (icons, images, and SVGs) for better loading times.
+  - Cleaned up unused code and improved readability.
