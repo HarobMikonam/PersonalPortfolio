@@ -1,39 +1,79 @@
-# Portfolio - Written Using Vanilla Javascript
+# Portfolio - Written Using Vanilla JavaScript
 
-#### 1.1.0 - The addition of Navigation Bar, Footer and the start of home page text.
+### **Changelog:**
 
-#### 0.2.0 - The completion of the homepage text and elements, media queries required for responsiveness across devices.
+#### **1.0.0**
 
-#### 0.3.0 - Added javascript files to turn the website into an SPA, dynamically loading content instead of page change.
+- Added a Navigation Bar, Footer, and started working on the home page content. The basic structure of the page is now in place.
 
-#### 0.3.1 - Removed Files that make the portfolio into an SPA. No longer dynamically loading elements.
+#### **1.1.0**
 
-#### 0.4.0 - Made the navbar and footer into reusable components.
+- Finished the homepage text and added media queries for responsiveness, ensuring the page works well across different devices like phones and tablets.
 
-#### 0.5.0 - Created the containers and placed content within about me page.
+#### **1.2.0**
 
-#### 0.5.1 - added skill icons, did formatting and added background image.
+- Added JavaScript to make the site a Single Page Application (SPA), so the content loads without refreshing the whole page.
 
-#### 0.6.0 - Completion of the about me page.
+#### **1.3.0**
 
-#### 0.6.1 - Minor QoL additions to the About Me page that forbids it from completely breaking when zooming out.
+- Removed the SPA functionality and went back to regular page navigation. This approach worked better for the project at this stage.
 
-#### 0.6.2 - Added lazy loading to icons and pictures. Preloading Fonts now.
+#### **2.0.0**
 
-#### 0.7.0 - Added the projects page. Started development on the projects section of the page.
+- Refactored the Navbar and Footer into reusable components, making it easier to maintain and update them across multiple pages.
 
-#### 0.7.1 - Making the projects page be populated using html components using javascript.
+#### **2.1.0**
 
-#### 0.7.2 - Projects page now populated, each project will be its own individual component where ill be able to create projects using a simple CMS. Projects page requires minor css changes and pagination feature.
+- Created containers and added content to the About Me page. This section now includes personal details and background information.
 
-#### 0.7.3 - The start of Contact me Page, added forms and populated the page with content.
+#### **2.2.0**
 
-#### 0.7.4 - Fixes in the projects page, have made the projects boxes attract towards the center of the container.
+- Added skill icons, adjusted the formatting, and added a background image to enhance the appearance of the About Me page.
 
-#### 0.7.5 - Start of implementation of pages in projects, making it possible to add more than 9 projects.
+#### **2.3.0**
 
-#### 0.8.0 - Making each page resposive, as of 0.8.0, the home page is almost done.
+- Completed the About Me page with all the necessary content and styling.
 
-#### 0.8.1 - Home page Responsiveness is done
+#### **2.3.1**
 
-#### 0.8.2 - About me Page Responsiveness is done
+- Made minor adjustments to the About Me page to prevent layout issues when zooming out on different devices.
+
+#### **2.4.0**
+
+- Implemented lazy loading for images and icons to improve the page load time. Fonts are also now preloaded for better performance.
+
+#### **3.0.0**
+
+- Added the Projects page and began developing the projects section, providing a dedicated area to showcase different projects.
+
+#### **3.1.0**
+
+- Populated the Projects page with dynamic content using HTML elements generated with JavaScript.
+
+#### **3.2.0**
+
+- Completed the projects section by creating individual components for each project. Minor CSS adjustments were made, and pagination was added for easier navigation.
+
+#### **3.3.0**
+
+- Started working on the Contact Me page, adding forms and initial content to gather user information.
+
+#### **3.4.0**
+
+- Fixed layout issues on the Projects page, ensuring project boxes align properly and look visually balanced.
+
+#### **3.5.0**
+
+- Implemented pagination on the Projects page, allowing for more than 9 projects to be displayed and making it easier to navigate through them.
+
+#### **4.0.0**
+
+- Focused on making the website fully responsive. The Home page is now optimized and almost complete.
+
+#### **4.1.0**
+
+- Completed the responsiveness for the Home page, ensuring it looks good on all screen sizes.
+
+#### **4.2.0**
+
+- Finished making the About Me page responsive as well, ensuring the layout adapts properly across all devices.

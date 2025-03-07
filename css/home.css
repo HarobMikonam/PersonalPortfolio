@@ -494,8 +494,8 @@ body {
     font-weight: 400;
     opacity: 0; /* Initially hidden */
     transform: translateY(-20px); /* Slightly move the elements up */
-    animation: fadeIn 0.8s ease forwards; /* Add fade-in animation */
-    animation-delay: 0.8s; /* Wait 1 second before starting animation */
+    animation: fadeIn 0.5s ease forwards; /* Add fade-in animation */
+    animation-delay: 0.5s; /* Wait 1 second before starting animation */
   }
 
   .m-navbar li:nth-child(1) {
