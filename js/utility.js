@@ -31,35 +31,79 @@ class Navbar extends HTMLElement {
         `;
   }
 }
-// class Footer extends HTMLElement {
-//   connectedCallback() {
-//     this.innerHTML = `
-//         <footer class="footer-container">
-//     <ul class="footerlinks">
-//       <li class="mail-icon-wrapper">
-//           <a href="mailto:mattfaghiri@gmail.com">
-//               <img tabindex="0" role="button" class="mail-icon icon" src="/icons/email.svg" alt="Email">
-//           </a>
-//       </li>
-//       <li><div class="divider"></div></li>
-//       <li class="github-icon-wrapper">
-//           <a href="https://github.com/harobmikonam" target="_blank" rel="noopener noreferrer">
-//               <img tabindex="0" role="button" class="github-icon icon" src="/icons/github.svg" alt="GitHub">
-//           </a>
-//       </li>
-//     </ul>
-//   </footer>
-//         `;
-//   }
-// }
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <footer class="footer-container close">
+      <!-- Hamburger button to toggle the drawer -->
+      <button class="hamburger-menu" aria-label="Menu">
+        <img src="/icons/hamburger.svg" alt="Menu" />
+      </button>
 
-// customElements.define("portfolio-navbar", Navbar);
-// customElements.define("portfolio-footer", Footer);
+      <!-- Static footer links (email, GitHub, etc.) -->
+      <ul class="footerlinks static-links">
+        <li class="mail-icon-wrapper">
+          <a href="mailto:mattfaghiri@gmail.com">
+            <img
+              tabindex="0"
+              role="button"
+              class="mail-icon icon"
+              src="/icons/email.svg"
+              alt="Email"
+            />
+          </a>
+        </li>
+        <h1 class="navlogo-footer"><a href="#">Matthew</a></h1>
+        <li class="divider"></li>
+        <li class="github-icon-wrapper">
+          <a
+            href="https://github.com/harobmikonam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              tabindex="0"
+              role="button"
+              class="github-icon icon"
+              src="/icons/github.svg"
+              alt="GitHub"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <!-- Navigation links in the drawer -->
+      <ul class="m-navbar">
+        <li id="home">
+          <a href="home.html">Home</a>
+          <img class="M-icon" src="./icons/active page.svg" />
+        </li>
+        <li id="about-me">
+          <a href="about-me.html">About Me</a>
+          <img class="M-icon" src="./icons/active page.svg" />
+        </li>
+        <li id="projects">
+          <a href="projects.html">Projects</a>
+          <img class="M-icon" src="./icons/active page.svg" />
+        </li>
+        <li id="contact-me">
+          <a href="contact-me.html">Contact Me</a>
+          <img class="M-icon" src="./icons/active page.svg" />
+        </li>
+      </ul>
+    </footer>
+        `;
+  }
+}
+
+customElements.define("portfolio-navbar", Navbar);
+customElements.define("portfolio-footer", Footer);
 
 const drawer = document.querySelector(".footer-container");
 const button = document.querySelector(".hamburger-menu");
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".m-navbar");
 
 button.addEventListener("click", () => {
   drawer.classList.toggle("open");
+  navbar.classList.toggle("openm");
 });
