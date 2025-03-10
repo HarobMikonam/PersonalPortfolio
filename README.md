@@ -1,5 +1,12 @@
 # Portfolio - Written Using Vanilla JavaScript
 
+## Home Page - Desktop View
+![image](https://github.com/user-attachments/assets/e14302c9-3593-4f47-a774-3087e2e3b831)
+
+### Home, Contact Us, About Me Page - Mobile View
+![image](https://github.com/user-attachments/assets/b29e652d-e3f8-42c9-bc52-041c886a9c29)
+
+
 ### **Changelog:**
 
 #### **1.0.0**
