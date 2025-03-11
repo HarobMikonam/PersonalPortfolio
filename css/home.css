@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -118,7 +119,7 @@ body {
   position: static;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 74px;
 }
 
@@ -308,7 +309,8 @@ body {
   height: 600px;
   justify-content: space-around;
   flex-direction: column;
-  display: none;
+  margin-bottom: 10px;
+  /* display: none; */
   /* temporarily hidden until the development of the snake game is done */
 }
 
@@ -408,8 +410,135 @@ body {
   display: none;
 }
 
-/* FOOTER RESPONSIVE */
-@media screen and (max-width: 768px) {
+.m-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .navlogo {
+    display: none;
+  }
+  .navbar-text {
+    visibility: visible; /* Ensure children remain visible */
+    position: relative; /* Keep layout intact */
+  }
+
+  .container {
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+    height: 90%;
+  }
+  .wasd {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+
+  .gamesettings {
+    height: 190px;
+    width: 350px;
+  }
+
+  .thnakelogo {
+    gap: 0;
+  }
+
+  .gamesettings p {
+    display: none;
+  }
+
+  .textcontent {
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .home-buttons {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .contact-me {
+    border-radius: 50px;
+    height: 56px;
+    width: 330px;
+    font-size: 22px;
+    justify-content: center;
+    padding: 0;
+  }
+  .download-cv {
+    border-radius: 50px;
+    height: 56px;
+    width: 330px;
+    font-size: 22px;
+    text-wrap: nowrap;
+    padding: 0;
+  }
+  /* .main {
+    overflow: hidden; temporarily disabled for navbar mobile
+  } */
+
+  /* Use pseudo elements before on the hamburger menu
+  make it 2px bigger cause border is 1px. Center it behind the hamburger menu backgground and in the center
+  before elements must give them content property
+  .hamburger-menu:before {
+    content: '';
+  } */
+
+  .hamburger-menu {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: 1px solid var(--stroke-color);
+    border-right: 1px solid var(--stroke-color);
+    border-top: 1px solid var(--stroke-color);
+    border-bottom: none;
+    background-color: var(--footer-nav-color);
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    left: calc(50vw - 25px);
+    top: 0px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transform: rotate(360deg) translateY(-98%);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-menu img {
+    width: 30px;
+    height: 20px;
+    /* transform: rotate(180deg) translateY(100%); */
+  }
+
+  .open {
+    height: 85%;
+    display: flex;
+    align-items: end;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .close {
+    display: flex;
+    align-items: end;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .main {
+    padding-top: 50px;
+  }
+
   .nav-container {
     display: none;
     justify-content: center;
@@ -476,7 +605,7 @@ body {
     list-style: none;
     opacity: 0; /* Initially hidden */
     visibility: hidden; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out; /* Smooth transition */
   }
 
   .m-navbar.openm {
@@ -487,6 +616,165 @@ body {
   .m-navbar li {
     display: flex;
     flex-direction: column; /* Stack icon below the text */
+    align-items: center;
+    padding: 20px;
+    font-size: 30px !important;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Slightly move the elements up */
+    animation: fadeIn 0.5s ease forwards; /* Add fade-in animation */
+    animation-delay: 0.5s; /* Wait 1 second before starting animation */
+  }
+
+  .m-navbar li:nth-child(1) {
+    animation-delay: 1s; /* Delay for each item */
+  }
+
+  .m-navbar li:nth-child(2) {
+    animation-delay: 1.2s; /* Delay for each item */
+  }
+
+  .m-navbar li:nth-child(3) {
+    animation-delay: 1.4s; /* Delay for each item */
+  }
+
+  .m-navbar li:nth-child(4) {
+    animation-delay: 1.6s; /* Delay for each item */
+  }
+
+  .m-navbar li img {
+    padding-top: 5px;
+  }
+
+  /* Keyframes for fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start from above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at the normal position */
+    }
+  }
+
+  #home,
+  #about-me,
+  #projects,
+  #contact-me {
+    padding: 30px;
+    font-size: 25px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    z-index: -1;
+  }
+
+  .footer-container {
+    max-width: 100%;
+  }
+
+  .navlogo-footer {
+    visibility: visible;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 30px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+  }
+
+  .footerlinks {
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+/* FOOTER RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 50px;
+  }
+
+  .nav-container {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    top: 100px;
+    width: 100%;
+    border: none;
+    visibility: hidden;
+  }
+
+  .navbar-text ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items in the center horizontally */
+    justify-content: center; /* Align items in the center vertically */
+    height: 100%;
+    gap: 60px;
+  }
+
+  .navbar-text {
+    z-index: 15;
+    top: -250px;
+    font-size: 25px;
+    left: 88%;
+  }
+
+  .navbar {
+    height: 0;
+    width: 0;
+  }
+
+  .m-navbar li.active {
+    color: var(--secondary-color); /* Change text color */
+    font-weight: 600;
+    position: relative;
+  }
+
+  /* Show underline SVG */
+  .m-navbar li.active img {
+    display: block; /* Ensure it's visible */
+  }
+
+  /* Hide underline SVG for non-active items */
+  .m-navbar li img {
+    display: none;
+  }
+
+  .m-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    color: var(--text-color);
+    left: 48%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .m-navbar.openm {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .m-navbar li {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     font-size: 30px !important;
@@ -558,6 +846,7 @@ body {
   .footerlinks {
     justify-content: space-between;
     width: 90%;
+    z-index: 1;
   }
 
   .divider {
@@ -577,7 +866,7 @@ body {
 
   .container {
     flex-wrap: wrap-reverse;
-    gap: 0;
+    gap: 30px;
     height: 90%;
   }
   .wasd {
@@ -588,8 +877,8 @@ body {
   }
 
   .gamesettings {
-    height: 200px;
-    width: 362px;
+    height: 190px;
+    width: 350px;
   }
 
   .thnakelogo {
@@ -615,9 +904,9 @@ body {
     font-size: 30px;
   }
   .home-buttons {
-    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 24px;
+    margin-top: 30px;
   }
   .contact-me {
     border-radius: 50px;

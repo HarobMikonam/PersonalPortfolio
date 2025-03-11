@@ -1,5 +1,13 @@
 # Portfolio - Written Using Vanilla JavaScript
 
+## Home Page - Desktop View
+
+![image](https://github.com/user-attachments/assets/e14302c9-3593-4f47-a774-3087e2e3b831)
+
+### Home, Contact Us, About Me Page - Mobile View
+
+![image](https://github.com/user-attachments/assets/b29e652d-e3f8-42c9-bc52-041c886a9c29)
+
 ### **Changelog:**
 
 #### **1.0.0**
@@ -85,3 +93,13 @@
   - Ensured smooth pagination and navigation.
   - Optimized assets (icons, images, and SVGs) for better loading times.
   - Cleaned up unused code and improved readability.
+
+#### **4.3.1**
+
+- **Fixed Mobile & UI Issues**
+  - Adjusted `.m-navbar` animation to close faster.
+  - Ensured `.m-navbar` appears behind `.footerlinks`.
+  - Centered footer logo properly on all screen sizes.
+  - Fixed submit button being hidden behind the footer on smaller screens.
+  - Improved textarea placeholder styling consistency.
+  - Refined transition effects for smoother UI interactions.
