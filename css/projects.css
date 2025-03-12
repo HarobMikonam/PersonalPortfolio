@@ -387,6 +387,259 @@ main {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .title-container {
+    position: relative;
+    top: -15%;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 50px;
+  }
+
+  .project-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: -10%;
+  }
+  .pagination {
+    display: none;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    left: 3px;
+    margin-bottom: 20%;
+  }
+
+  .main-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+    margin-bottom: 20%;
+  }
+
+  .container {
+    width: 250px;
+    height: 256px;
+  }
+
+  .description {
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .nav-container {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    top: 100px;
+    width: 100%;
+    border: none;
+    visibility: hidden;
+  }
+
+  .navbar-text ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items in the center horizontally */
+    justify-content: center; /* Align items in the center vertically */
+    height: 100%;
+    gap: 60px;
+  }
+
+  .navbar-text {
+    z-index: 15;
+    top: -250px;
+    font-size: 25px;
+    left: 88%;
+  }
+
+  .navbar {
+    height: 0;
+    width: 0;
+  }
+
+  .m-navbar li.active {
+    color: var(--secondary-color); /* Change text color */
+    font-weight: 600;
+    position: relative;
+  }
+
+  /* Show underline SVG */
+  .m-navbar li.active img {
+    display: block; /* Ensure it's visible */
+  }
+
+  /* Hide underline SVG for non-active items */
+  .m-navbar li img {
+    display: none;
+  }
+
+  .m-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    color: var(--text-color);
+    left: 50%;
+    width: 100%;
+    top: 35%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Shifts it back by half its own width & height */
+    text-align: center;
+    list-style: none;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .m-navbar.openm {
+    opacity: 1; /* Make visible when opened */
+    visibility: visible; /* Ensure visible when opened */
+  }
+
+  .m-navbar li {
+    display: flex;
+    flex-direction: column; /* Stack icon below the text */
+    align-items: center;
+    padding: 30px;
+    font-size: 30px !important;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Slightly move the elements up */
+    animation: fadeIn 0.8s ease forwards; /* Add fade-in animation */
+    animation-delay: 0.8s; /* Wait 1 second before starting animation */
+  }
+
+  .m-navbar li:nth-child(1) {
+    animation-delay: 1s; /* Delay for each item */
+  }
+
+  .m-navbar li:nth-child(2) {
+    animation-delay: 1.2s; /* Delay for each item */
+  }
+
+  .m-navbar li:nth-child(3) {
+    animation-delay: 1.4s; /* Delay for each item */
+  }
+
+  .m-navbar li:nth-child(4) {
+    animation-delay: 1.6s; /* Delay for each item */
+  }
+
+  .m-navbar li img {
+    padding-top: 5px;
+  }
+
+  /* Keyframes for fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start from above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at the normal position */
+    }
+  }
+
+  .footer-container {
+    padding: 21px 0px;
+  }
+
+  .navlogo-footer {
+    visibility: visible;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 30px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+  }
+
+  .footerlinks {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 21px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+/* TEMPORARY MAIN NONE */
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: 1px solid var(--stroke-color);
+    border-right: 1px solid var(--stroke-color);
+    border-top: 1px solid var(--stroke-color);
+    border-bottom: none;
+    background-color: var(--footer-nav-color);
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    left: 50%;
+    transform: rotate(360deg) translateY(-98%) translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger-menu img {
+    width: 30px;
+    height: 20px;
+    /* transform: rotate(180deg) translateY(100%); */
+  }
+
+  .open {
+    height: 85%;
+    display: flex;
+    align-items: end;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .close {
+    display: flex;
+    align-items: end;
+    transition: height 0.4s ease-in-out;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .title {
     text-align: center;
@@ -638,258 +891,5 @@ main {
 
   .divider {
     display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .title {
-    text-align: center;
-  }
-
-  ::-webkit-scrollbar {
-    width: 1px;
-  }
-
-  .title-container {
-    position: relative;
-    top: -15%;
-  }
-  .projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 0;
-    gap: 50px;
-  }
-
-  .project-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    top: -10%;
-  }
-  .pagination {
-    display: none;
-    margin: 0;
-    position: relative;
-    padding: 0;
-    left: 3px;
-    margin-bottom: 20%;
-  }
-
-  .main-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 36px;
-    grid-row-gap: 36px;
-    margin-bottom: 20%;
-  }
-
-  .container {
-    width: 250px;
-    height: 256px;
-  }
-
-  .description {
-    margin-top: 30px;
-    /* margin-bottom: 30px; */
-    text-align: center;
-  }
-
-  .line {
-    display: none;
-  }
-
-  .nav-container {
-    display: none;
-    justify-content: center;
-    position: absolute;
-    height: 100%;
-    top: 100px;
-    width: 100%;
-    border: none;
-    visibility: hidden;
-  }
-
-  .navbar-text ul {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Align items in the center horizontally */
-    justify-content: center; /* Align items in the center vertically */
-    height: 100%;
-    gap: 60px;
-  }
-
-  .navbar-text {
-    z-index: 15;
-    top: -250px;
-    font-size: 25px;
-    left: 88%;
-  }
-
-  .navbar {
-    height: 0;
-    width: 0;
-  }
-
-  .m-navbar li.active {
-    color: var(--secondary-color); /* Change text color */
-    font-weight: 600;
-    position: relative;
-  }
-
-  /* Show underline SVG */
-  .m-navbar li.active img {
-    display: block; /* Ensure it's visible */
-  }
-
-  /* Hide underline SVG for non-active items */
-  .m-navbar li img {
-    display: none;
-  }
-
-  .m-navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    align-items: center;
-    color: var(--text-color);
-    left: 50%;
-    width: 100%;
-    top: 35%;
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Shifts it back by half its own width & height */
-    text-align: center;
-    list-style: none;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
-  }
-
-  .m-navbar.openm {
-    opacity: 1; /* Make visible when opened */
-    visibility: visible; /* Ensure visible when opened */
-  }
-
-  .m-navbar li {
-    display: flex;
-    flex-direction: column; /* Stack icon below the text */
-    align-items: center;
-    padding: 30px;
-    font-size: 30px !important;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(-20px); /* Slightly move the elements up */
-    animation: fadeIn 0.8s ease forwards; /* Add fade-in animation */
-    animation-delay: 0.8s; /* Wait 1 second before starting animation */
-  }
-
-  .m-navbar li:nth-child(1) {
-    animation-delay: 1s; /* Delay for each item */
-  }
-
-  .m-navbar li:nth-child(2) {
-    animation-delay: 1.2s; /* Delay for each item */
-  }
-
-  .m-navbar li:nth-child(3) {
-    animation-delay: 1.4s; /* Delay for each item */
-  }
-
-  .m-navbar li:nth-child(4) {
-    animation-delay: 1.6s; /* Delay for each item */
-  }
-
-  .m-navbar li img {
-    padding-top: 5px;
-  }
-
-  /* Keyframes for fadeIn animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Start from above */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* End at the normal position */
-    }
-  }
-
-  .footer-container {
-    padding: 21px 0px;
-  }
-
-  .navlogo-footer {
-    visibility: visible;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    color: var(--secondary-color);
-    font-size: 30px;
-    height: 100%;
-    width: fit-content;
-    display: flex;
-  }
-
-  .footerlinks {
-    justify-content: space-between;
-    width: 100%;
-    padding: 0px 21px;
-  }
-
-  .divider {
-    display: none;
-  }
-}
-
-/* TEMPORARY MAIN NONE */
-@media screen and (max-width: 768px) {
-  .hamburger-menu {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-left: 1px solid var(--stroke-color);
-    border-right: 1px solid var(--stroke-color);
-    border-top: 1px solid var(--stroke-color);
-    border-bottom: none;
-    background-color: var(--footer-nav-color);
-    width: 56px;
-    height: 30px;
-    position: absolute;
-    top: 0px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    left: 50%;
-    transform: rotate(360deg) translateY(-98%) translateX(-50%);
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .hamburger-menu img {
-    width: 30px;
-    height: 20px;
-    /* transform: rotate(180deg) translateY(100%); */
-  }
-
-  .open {
-    height: 85%;
-    display: flex;
-    align-items: end;
-    transition: height 0.4s ease-in-out;
-  }
-
-  .close {
-    display: flex;
-    align-items: end;
-    transition: height 0.4s ease-in-out;
   }
 }
