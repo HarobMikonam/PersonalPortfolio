@@ -534,13 +534,13 @@ body {
   }
 
   p {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   h1 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   h2 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   .home-buttons {
     justify-content: space-evenly;
@@ -614,7 +614,6 @@ body {
     transition: height 0.4s ease-in-out;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .navlogo {
     display: none;
