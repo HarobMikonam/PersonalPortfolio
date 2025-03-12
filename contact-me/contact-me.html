@@ -24,21 +24,21 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./icons/favicon-32x32.png"
+      href="../icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./icons/favicon-16x16.png"
+      href="../icons/favicon-16x16.png"
     />
     <link
       rel="apple-touch-icon"
       type="image/png"
       sizes="180x180"
-      href="./icons/apple-touch-icon.png"
+      href="../icons/apple-touch-icon.png"
     />
-    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../icons/favicon.svg" />
   </head>
   <body>
     <portfolio-navbar></portfolio-navbar>
@@ -54,16 +54,27 @@
             <div class="description">
               Have a question?<br />Shoot me a message.
             </div>
-            <a href="./content/Matthew_CV.pdf"
-              ><button class="button download-cv">Download CV</button></a
+            <a
+              href="../content/Matthew_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              <button class="button download-cv">Download CV</button>
+            </a>
           </div>
           <div class="line">
-            <img src="images\fade-line.svg" height="580" alt="" />
+            <img src="..\images\fade-line.svg" height="580" alt="" />
           </div>
           <div class="contact-wrapper">
             <div class="contact-me-content-container">
-              <form action="">
+              <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <label
+                    >Don’t fill this out if you're human:
+                    <input name="bot-field"
+                  /></label>
+                </p>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="John" />
                 <div class="name"></div>
@@ -91,7 +102,7 @@
       </section>
     </main>
     <portfolio-footer></portfolio-footer>
-    <script src="./js/utility.js"></script>
-    <script src="./js/active-page.js"></script>
+    <script src="../js/utility.js"></script>
+    <script src="../js/active-page.js"></script>
   </body>
 </html>

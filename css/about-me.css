@@ -275,6 +275,7 @@ flex-direction: column; */
   gap: 76px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 18%;
 }
 
 /* width */
@@ -339,12 +340,12 @@ br {
     width: 56px;
     height: 30px;
     position: absolute;
-    left: calc(50vw - 25px);
     top: 0px;
     display: flex;
     align-items: end;
     justify-content: center;
-    transform: rotate(360deg) translateY(-98%);
+    left: 50%;
+    transform: rotate(360deg) translateY(-98%) translateX(-50%);
     cursor: pointer;
     z-index: 10;
   }
@@ -421,7 +422,6 @@ br {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     justify-items: center;
-    margin-bottom: 50%;
   }
   .nav-container {
     display: none;
@@ -479,7 +479,8 @@ br {
     position: absolute;
     align-items: center;
     color: var(--text-color);
-    left: 46%;
+    width: 100%;
+    left: 50%;
     top: 35%;
     transform: translate(
       -50%,
@@ -489,7 +490,7 @@ br {
     list-style: none;
     opacity: 0; /* Initially hidden */
     visibility: hidden; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
   }
 
   .m-navbar.openm {
@@ -554,7 +555,7 @@ br {
   }
 
   .footer-container {
-    max-width: 100%;
+    padding: 21px 0px;
   }
 
   .navlogo-footer {
@@ -570,7 +571,8 @@ br {
 
   .footerlinks {
     justify-content: space-between;
-    width: 90%;
+    padding: 0px 21px;
+    width: 100%;
   }
 
   .divider {
@@ -688,9 +690,10 @@ br {
     justify-content: center;
     flex-wrap: wrap;
     position: absolute;
+    width: 100%;
     align-items: center;
     color: var(--text-color);
-    left: 46%;
+    left: 50%;
     top: 35%;
     transform: translate(
       -50%,
@@ -700,7 +703,7 @@ br {
     list-style: none;
     opacity: 0; /* Initially hidden */
     visibility: hidden; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
   }
 
   .m-navbar.openm {
@@ -765,7 +768,7 @@ br {
   }
 
   .footer-container {
-    max-width: 100%;
+    align-items: center;
   }
 
   .navlogo-footer {
@@ -781,7 +784,8 @@ br {
 
   .footerlinks {
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
+    padding: 0px 21px;
   }
 
   .divider {
@@ -802,12 +806,12 @@ br {
     width: 56px;
     height: 30px;
     position: absolute;
-    left: calc(50vw - 25px);
     top: 0px;
     display: flex;
     align-items: end;
     justify-content: center;
-    transform: rotate(360deg) translateY(-98%);
+    left: 50%;
+    transform: rotate(360deg) translateY(-98%) translateX(-50%);
     cursor: pointer;
     z-index: 10;
   }

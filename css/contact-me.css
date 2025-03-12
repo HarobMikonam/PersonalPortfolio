@@ -376,7 +376,7 @@ input[type="text"] {
   border-radius: 25px;
   border-color: var(--stroke-color);
   height: 50px;
-  /* padding-left: 28px; */
+  padding-left: 28px;
   resize: none;
   box-shadow: none;
   outline: none;
@@ -421,7 +421,7 @@ button {
   border: 1px solid var(--project-nothovered);
   background-color: var(--modal-color);
   position: relative;
-  left: 1.3em;
+  left: 0.6em;
   top: -8.8em;
   z-index: -1;
   background-color: var(--modal-color);
@@ -471,12 +471,12 @@ button {
     width: 56px;
     height: 30px;
     position: absolute;
-    left: calc(50vw - 25px);
     top: 0px;
     display: flex;
     align-items: end;
     justify-content: center;
-    transform: rotate(360deg) translateY(-98%);
+    left: 50%;
+    transform: rotate(360deg) translateY(-98%) translateX(-50%);
     cursor: pointer;
     z-index: 10;
   }
@@ -527,6 +527,12 @@ button {
     margin: 0;
   }
 
+  #name,
+  #email,
+  #message {
+    padding-left: 0px;
+  }
+
   #message {
     width: 354px;
   }
@@ -656,7 +662,7 @@ button {
     position: absolute;
     align-items: center;
     color: var(--text-color);
-    left: 46%;
+    left: 50%;
     top: 35%;
     transform: translate(
       -50%,
@@ -666,7 +672,7 @@ button {
     list-style: none;
     opacity: 0; /* Initially hidden */
     visibility: hidden; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
   }
 
   .m-navbar.openm {
@@ -721,7 +727,7 @@ button {
   }
 
   .footer-container {
-    max-width: 100%;
+    padding: 21px 0px;
   }
 
   .navlogo-footer {
@@ -737,7 +743,8 @@ button {
 
   .footerlinks {
     justify-content: space-between;
-    width: 90%;
+    padding: 0px 21px;
+    width: 100%;
   }
 
   .divider {
@@ -899,7 +906,7 @@ button {
     position: absolute;
     align-items: center;
     color: var(--text-color);
-    left: 46%;
+    left: 48%;
     top: 35%;
     transform: translate(
       -50%,
@@ -909,7 +916,7 @@ button {
     list-style: none;
     opacity: 0; /* Initially hidden */
     visibility: hidden; /* Initially hidden */
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
   }
 
   .m-navbar.openm {
@@ -964,7 +971,7 @@ button {
   }
 
   .footer-container {
-    max-width: 100%;
+    padding: 21px 0px;
   }
 
   .navlogo-footer {
@@ -980,7 +987,8 @@ button {
 
   .footerlinks {
     justify-content: space-between;
-    width: 90%;
+    padding: 0px 21px;
+    width: 100%;
   }
 
   .divider {
@@ -1001,12 +1009,11 @@ button {
     width: 56px;
     height: 30px;
     position: absolute;
-    left: calc(50vw - 25px);
     top: 0px;
     display: flex;
     align-items: end;
     justify-content: center;
-    transform: rotate(360deg) translateY(-98%);
+    transform: rotate(360deg) translateY(-98%) translateX(-50%);
     cursor: pointer;
     z-index: 10;
   }

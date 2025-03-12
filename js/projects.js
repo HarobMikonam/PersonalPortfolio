@@ -1,24 +1,45 @@
 class ProjectSection extends HTMLElement {
-  connectedCallback() {
+  async connectedCallback() {
     const maincontainer = document.createElement("div");
     maincontainer.className = "main-container";
-    const max_projects = 2;
 
-    for (let i = 0; i <= max_projects; i++) {
-      const project = document.createElement("div");
-      project.className = "container";
+    try {
+      // Fetch project data from JSON file
+      const response = await fetch("../content/projects.json");
+      const projects = await response.json();
 
-      const boxBehind = document.createElement("div");
-      boxBehind.className = "box-behind";
-      project.appendChild(boxBehind);
+      // Limit the number of projects displayed
+      const max_projects = Math.min(projects.length, 6); // Adjust max projects as needed
 
-      const box = document.createElement("div");
-      box.className = "box";
-      project.appendChild(box);
+      for (let i = 0; i < max_projects; i++) {
+        const projectData = projects[i];
 
-      maincontainer.appendChild(project);
+        const project = document.createElement("div");
+        project.className = "container";
+
+        const boxBehind = document.createElement("div");
+        boxBehind.className = "box-behind";
+        project.appendChild(boxBehind);
+
+        const box = document.createElement("div");
+        box.className = "box";
+
+        // Adding project details inside box
+        box.innerHTML = `
+        <a href="${projectData.link}" target="_blank" class="project-text">
+          <h3>${projectData.title}</h3>
+          <p>${projectData.description}</p>
+        </a>
+      `;
+
+        project.appendChild(box);
+        maincontainer.appendChild(project);
+      }
+
+      this.appendChild(maincontainer);
+    } catch (error) {
+      console.error("Error loading projects:", error);
     }
-    this.appendChild(maincontainer);
 
     // CSS BOX-BEHIND MANIPULATION
     const container = document.querySelectorAll(".container");

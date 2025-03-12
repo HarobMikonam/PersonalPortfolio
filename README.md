@@ -90,7 +90,6 @@
 
 - Finalized the **Projects page**.
   - Improved structure and styling.
-  - Ensured smooth pagination and navigation.
   - Optimized assets (icons, images, and SVGs) for better loading times.
   - Cleaned up unused code and improved readability.
 
@@ -98,7 +97,6 @@
 
 - **Fixed Mobile & UI Issues**
   - Adjusted `.m-navbar` animation to close faster.
-  - Ensured `.m-navbar` appears behind `.footerlinks`.
   - Centered footer logo properly on all screen sizes.
   - Fixed submit button being hidden behind the footer on smaller screens.
   - Improved textarea placeholder styling consistency.

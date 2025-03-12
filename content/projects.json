@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Portfolio",
+    "description": "Personal Portfolio made with HTML, CSS and Vanilla Javascript.",
+    "image": "images/chrome_elsJ5SoqwG.png",
+    "link": "https://github.com/HarobMikonam/PersonalPortfolio"
+  },
+  {
+    "title": "MonoLoco",
+    "description": "Mono Loco is a website built for a nightclub made in HTML, CSS, SCSS and Javascript.",
+    "image": "images/project2.jpg",
+    "link": "https://github.com/HarobMikonam/MonoLoco"
+  },
+  {
+    "title": "LeakPing",
+    "description": "LeakPing is a React Native Front End Prototype Mobile Applicatiom",
+    "image": "images/project3.jpg",
+    "link": "https://github.com/HarobMikonam/LeakPing"
+  }
+]

@@ -2,24 +2,24 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <div class="nav-container">
-    <h1 class="navlogo"><a href="#">Matthew</a></h1>
+    <h1 class="navlogo"><a href="home.html">Matthew</a></h1>
     <div class="navbar">
         <nav class="navbar-text">
             <ul>
                 <li id="home">
-                    <a href="home.html">Home</a>
+                    <a href="/home/">Home</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
                 <li id="about-me">
-                    <a href="about-me.html">About Me</a>
+                    <a href="/about-me/">About Me</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
                 <li id="projects">
-                    <a href="projects.html">Projects</a>
+                    <a href="/projects/">Projects</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
                 <li id="contact-me">
-                    <a href="contact-me.html">Contact Me</a>
+                    <a href="/contact-me/">Contact Me</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
             </ul>
@@ -75,19 +75,19 @@ class Footer extends HTMLElement {
       <!-- Navigation links in the drawer -->
       <ul class="m-navbar">
         <li id="home">
-          <a href="home.html">Home</a>
+          <a href="/home/">Home</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
         <li id="about-me">
-          <a href="about-me.html">About Me</a>
+          <a href="/about-me/">About Me</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
         <li id="projects">
-          <a href="projects.html">Projects</a>
+          <a href="/projects/">Projects</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
         <li id="contact-me">
-          <a href="contact-me.html">Contact Me</a>
+          <a href="/contact-me/">Contact Me</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
       </ul>
