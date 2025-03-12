@@ -76,19 +76,18 @@ class Footer extends HTMLElement {
       <ul class="m-navbar">
         <li id="home">
           <a href="/home/index.html">Home</a>
-          <img class="M-icon" src="../icons/active page.svg" />
+          <img class="M-icon" src="../icons/active_page.svg" />
         </li>
         <li id="about-me">
           <a href="/about-me/about-me.html">About Me</a>
-          <img class="M-icon" src="../icons/active page.svg" />
+          <img class="M-icon" src="../icons/active_page.svg" />
         </li>
         <li id="projects">
           <a href="/projects/projects.html">Projects</a>
-          <img class="M-icon" src="../icons/active page.svg" />
-        </li>
+          <img class="M-icon" src="../icons/active_page.svg" />
         <li id="contact-me">
           <a href="/contact-me/contact-me.html">Contact Me</a>
-          <img class="M-icon" src="../icons/active page.svg" />
+          <img class="M-icon" src="../icons/active_page.svg" />
         </li>
       </ul>
     </footer>
