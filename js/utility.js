@@ -7,19 +7,19 @@ class Navbar extends HTMLElement {
         <nav class="navbar-text">
             <ul>
                 <li id="home">
-                    <a href="/home/">Home</a>
+                    <a href="/home/index.html">Home</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
                 <li id="about-me">
-                    <a href="/about-me/">About Me</a>
+                    <a href="/about-me/about-me.html">About Me</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
                 <li id="projects">
-                    <a href="/projects/">Projects</a>
+                    <a href="/projects/projects.html">Projects</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
                 <li id="contact-me">
-                    <a href="/contact-me/">Contact Me</a>
+                    <a href="/contact-me/contact-me.html">Contact Me</a>
                     <img class="icon" src="./icons/active page.svg">
                 </li>
             </ul>
@@ -75,19 +75,19 @@ class Footer extends HTMLElement {
       <!-- Navigation links in the drawer -->
       <ul class="m-navbar">
         <li id="home">
-          <a href="/home/">Home</a>
+          <a href="/home/index.html">Home</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
         <li id="about-me">
-          <a href="/about-me/">About Me</a>
+          <a href="/about-me/about-me.html">About Me</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
         <li id="projects">
-          <a href="/projects/">Projects</a>
+          <a href="/projects/projects.html">Projects</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
         <li id="contact-me">
-          <a href="/contact-me/">Contact Me</a>
+          <a href="/contact-me/contact-me.html">Contact Me</a>
           <img class="M-icon" src="./icons/active page.svg" />
         </li>
       </ul>
