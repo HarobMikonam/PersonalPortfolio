@@ -2,3 +2,5 @@
 /about-me    /about-me/about-me.html    200
 /projects    /projects/projects.html    200
 /contact-me    /contact-me/contact-me.html    200
+
+/    /home/   301
