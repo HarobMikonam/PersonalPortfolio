@@ -101,3 +101,44 @@
   - Fixed submit button being hidden behind the footer on smaller screens.
   - Improved textarea placeholder styling consistency.
   - Refined transition effects for smoother UI interactions.
+
+### Version 4.4.0
+
+- Completed responsiveness across all pages, ensuring layouts adjust properly on different screen sizes.
+- Fixed media queries that stopped working after restructuring file locations.
+- Adjusted font sizes and layout issues caused by the viewport meta tag.
+
+### Version 4.4.1
+
+- Implemented Netlify Forms for contact form submissions.
+- Fixed issue where submitting the form resulted in a 404 error.
+- Added hidden bot field for spam prevention.
+
+### Version 4.4.2
+
+- Converted navigation bar and footer into web components for better reusability and cleaner HTML structure.
+- Fixed issue where the active page indicator was not displaying correctly on the desktop version.
+- Updated navigation logic to work with the new folder structure.
+
+### Version 4.4.3
+
+- Updated `_redirects` file to properly route the homepage (`/home/index.html`) when accessing the root domain.
+- Fixed broken paths in internal links and assets.
+- Adjusted Netlify publish directory to ensure all files load correctly.
+
+### Version 4.4.5
+
+- Added Open Graph tags to generate proper previews when sharing links.
+- Included a site preview image (`graph-tag.png`).
+
+### Version 4.4.5
+
+- Fixed styling inconsistencies caused by missing or incorrect file paths after restructuring.
+- Addressed issues with media queries not applying correctly on mobile devices.
+- Adjusted layout and spacing in the footer for better alignment.
+
+### Version 4.4.6
+
+- Fixed issue where input fields had no styles applied when filled.
+- Improved form accessibility and UX by ensuring proper focus states and hover effects.
+- Minor refinements across the UI.
