@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+input:valid:focus {
+  padding-left: 20px !important;
+}
+
 .ibm-plex-sans-thin {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 100;
@@ -794,6 +798,10 @@ button {
   input[type="submit"] {
     top: 6%;
     position: relative;
+  }
+
+  input:focus {
+    padding-left: 20px;
   }
 
   input::placeholder,
