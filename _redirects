@@ -1,7 +1,7 @@
 /home    /home/index.html   200
 /about-me    /about-me/about-me.html    200
 /projects    /projects/projects.html    200
-/contact-me/* /contact-me/index.html 200
+/contact-me/ /contact-me/index.html 200
 
 
 /    /home/   301

@@ -8,19 +8,19 @@ class Navbar extends HTMLElement {
             <ul>
                 <li id="home">
                     <a href="/home/index.html">Home</a>
-                    <img class="icon" src="../icons/active page.svg">
+                    <img class="icon" src="../icons/active_page.svg">
                 </li>
                 <li id="about-me">
                     <a href="/about-me/about-me.html">About Me</a>
-                    <img class="icon" src="../icons/active page.svg">
+                    <img class="icon" src="../icons/active_page.svg">
                 </li>
                 <li id="projects">
                     <a href="/projects/projects.html">Projects</a>
-                    <img class="icon" src="../icons/active page.svg">
+                    <img class="icon" src="../icons/active_page.svg">
                 </li>
                 <li id="contact-me">
                     <a href="/contact-me/contact-me.html">Contact Me</a>
-                    <img class="icon" src="../icons/active page.svg">
+                    <img class="icon" src="../icons/active_page.svg">
                 </li>
             </ul>
         </nav>
