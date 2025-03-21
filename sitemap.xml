@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://mfaghiri.com/</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/home/</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/home/index.html</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/about-me/about-me.html</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/projects/projects.html</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/contact-me/</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/contact-me/contact-me.html</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/contact-me/contact-me</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mfaghiri.com/content/Matthew_CV.pdf</loc>
+    <lastmod>2025-03-21T18:48:18+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

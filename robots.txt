@@ -1,0 +1,4 @@
+Allow: /
+User-agent: *
+Disallow: /contact-me/contact-me.html
+Crawl-delay: 10
