@@ -110,7 +110,12 @@
           </div>
           <div class="contact-wrapper">
             <div class="contact-me-content-container">
-              <form name="contact" netlify>
+              <form
+                name="contact"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                netlify
+              >
                 <input type="hidden" name="form-name" value="contact" />
                 <p hidden>
                   <label
