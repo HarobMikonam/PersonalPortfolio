@@ -1,3 +1,10 @@
+/* GAME RELATED CSS */
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+/* END OF GAME RELATED CSS */
 * {
   padding: 0;
   margin: 0;
@@ -221,13 +228,12 @@ body {
   background-color: var(--modal-color);
   border: var(--stroke-color) solid 1px;
   border-radius: 25px;
-  display: none;
+  /* display: none; */
   width: 400px;
   height: 600px;
   justify-content: space-around;
   flex-direction: column;
   margin-bottom: 10px;
-  /* display: none; */
   /* temporarily hidden until the development of the snake game is done */
 }
 
