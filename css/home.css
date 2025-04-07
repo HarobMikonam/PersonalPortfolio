@@ -1,9 +1,10 @@
 /* GAME RELATED CSS */
-.fade-out {
+/* .fade-out {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 1s, opacity 1s linear;
-}
+} */
+
 /* END OF GAME RELATED CSS */
 * {
   padding: 0;
@@ -228,7 +229,7 @@ body {
   background-color: var(--modal-color);
   border: var(--stroke-color) solid 1px;
   border-radius: 25px;
-  /* display: none; */
+  display: none;
   width: 400px;
   height: 600px;
   justify-content: space-around;
