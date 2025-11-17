@@ -143,5 +143,5 @@
 
 - Added and deployed a `robots.txt` file to block crawlers from the `/contact-me/contact-me.html` page.
 - Created and uploaded a `sitemap.xml` with structured page listings and metadata.
-- Ensured proper formatting and path accuracy in the sitemap (including home, about, projects, and PDF CV).
+- Ensured proper formatting and path accuracy in the sitemap (including home, about, projects, and a new PDF CV).
 - Submitted sitemap to search engines to help indexing.
